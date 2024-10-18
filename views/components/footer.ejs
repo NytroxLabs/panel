@@ -1,0 +1,20 @@
+<% if (footer === true) { %>
+    <footer class="flex justify-center items-center fixed bottom-0 left-0 right-0 bg-gray-100 shadow-lg">
+        <div class="w-full md:w-6/12 px-4">
+            <div class="bg-white rounded-lg p-4 text-sm text-gray-500 font-semibold text-center">
+                Copyright © <span id="copyright-year"></span> <span id="copyright"></span>
+                <a href="https://github.com/NytroxLabs/Panel" class="text-gray-500 hover:text-blue-500 font-semibold">
+                    <u>Nytrox Panel / Skyport Panel</u>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("copyright-year").textContent = new Date().getFullYear();
+    </script>
+    
+    
+<% } %>
+
+</body>
+</html>
